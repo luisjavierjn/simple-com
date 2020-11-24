@@ -1,0 +1,25 @@
+HKCR
+{
+	SimpleCOM.SimpleChatServer.1 = s 'SimpleChatServer Class'
+	{
+		CLSID = s '{3F80789D-AD70-4A11-81B5-9D292E608276}'
+	}
+	SimpleCOM.SimpleChatServer = s 'SimpleChatServer Class'
+	{
+		CLSID = s '{3F80789D-AD70-4A11-81B5-9D292E608276}'
+		CurVer = s 'SimpleCOM.SimpleChatServer.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {3F80789D-AD70-4A11-81B5-9D292E608276} = s 'SimpleChatServer Class'
+		{
+			ProgID = s 'SimpleCOM.SimpleChatServer.1'
+			VersionIndependentProgID = s 'SimpleCOM.SimpleChatServer'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{88595D96-A29B-4211-8873-2B5B48947EE4}'
+		}
+	}
+}

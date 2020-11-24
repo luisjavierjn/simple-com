@@ -1,0 +1,35 @@
+// SimpleCOM.idl : IDL source for SimpleCOM
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (SimpleCOM.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(BA619428-BAD6-4F46-8E65-1B7B0575DEB5),
+	helpstring("ISimpleChatServer Interface"),
+	pointer_default(unique)
+]
+interface ISimpleChatServer : IUnknown{
+	[helpstring("method CallMe")] HRESULT CallMe([in] BSTR clientName, [in] BSTR** helloMessage);
+};
+[
+	uuid(88595D96-A29B-4211-8873-2B5B48947EE4),
+	version(1.0),
+	helpstring("SimpleCOM 1.0 Type Library")
+]
+library SimpleCOMLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(3F80789D-AD70-4A11-81B5-9D292E608276),
+		helpstring("SimpleChatServer Class")
+	]
+	coclass SimpleChatServer
+	{
+		[default] interface ISimpleChatServer;
+	};
+};

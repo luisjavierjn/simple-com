@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleCOM", "SimpleCOM\SimpleCOM.vcxproj", "{F7F57398-7821-4C81-A17F-BED85492BC32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleCOMPS", "SimpleCOM\SimpleCOMPS.vcxproj", "{CE3C78D1-FBBA-4A64-8AE4-536E19C849F8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleCOMClient", "ConsoleCOMClient\ConsoleCOMClient.vcxproj", "{BE042672-64C7-43D3-8702-721BABD11DB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7F57398-7821-4C81-A17F-BED85492BC32}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7F57398-7821-4C81-A17F-BED85492BC32}.Debug|Win32.Build.0 = Debug|Win32
+		{F7F57398-7821-4C81-A17F-BED85492BC32}.Release|Win32.ActiveCfg = Release|Win32
+		{F7F57398-7821-4C81-A17F-BED85492BC32}.Release|Win32.Build.0 = Release|Win32
+		{CE3C78D1-FBBA-4A64-8AE4-536E19C849F8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE3C78D1-FBBA-4A64-8AE4-536E19C849F8}.Release|Win32.ActiveCfg = Release|Win32
+		{BE042672-64C7-43D3-8702-721BABD11DB5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE042672-64C7-43D3-8702-721BABD11DB5}.Debug|Win32.Build.0 = Debug|Win32
+		{BE042672-64C7-43D3-8702-721BABD11DB5}.Release|Win32.ActiveCfg = Release|Win32
+		{BE042672-64C7-43D3-8702-721BABD11DB5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
